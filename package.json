@@ -2,7 +2,7 @@
   "name": "@newyork.anthonyng/react-transport",
   "version": "0.0.0-development",
   "description": "Transport React element to document.body",
-  "main": "lib/Transport.js",
+  "main": "build/index.js",
   "scripts": {
     "commit": "git-cz",
     "test": "jest",

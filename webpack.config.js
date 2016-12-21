@@ -2,10 +2,10 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-	entry: './main.js',
+	entry: './lib/Transport.js',
 	output: {
-		path: __dirname,
-		filename: 'bundle.js'
+		path: path.join(__dirname, 'build'),
+		filename: 'index.js'
 	},
 	module: {
 		loaders: [
