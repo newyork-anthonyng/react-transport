@@ -1,15 +1,15 @@
 {
   "name": "react-transport",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Transport React element to document.body",
+  "main": "lib/Transport.js",
   "scripts": {
     "test": "jest",
     "watch:test": "npm run test -- --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["portal", "react"],
+  "author": "Anthony Ng <newyork.anthonyng@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
