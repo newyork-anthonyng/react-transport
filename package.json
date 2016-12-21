@@ -28,6 +28,7 @@
     "commitizen": "^2.9.2",
     "cz-conventional-changelog": "^1.2.0",
     "enzyme": "^2.6.0",
+    "ghooks": "^2.0.0",
     "jest": "^18.0.0",
     "react-addons-test-utils": "^15.4.1",
     "semantic-release": "^6.3.2",
@@ -46,8 +47,13 @@
       }
     }
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run cover"
+    }
   },
   "repository": {
     "type": "git",
