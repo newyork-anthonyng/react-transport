@@ -8,6 +8,7 @@
     "test": "jest",
     "watch:test": "npm run test -- --watch",
     "cover": "npm run test -- --coverage",
+    "lint": "./node_modules/.bin/eslint lib/Transport.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "build": "mkdir -p build && babel ./lib/Transport.js --out-file ./build/index.js",
     "prepublish": "npm run build"
@@ -30,6 +31,8 @@
     "commitizen": "^2.9.2",
     "cz-conventional-changelog": "^1.2.0",
     "enzyme": "^2.6.0",
+    "eslint": "^3.12.2",
+    "eslint-plugin-react": "^6.8.0",
     "ghooks": "^2.0.0",
     "jest": "^18.0.0",
     "react-addons-test-utils": "^15.4.1",
@@ -54,7 +57,7 @@
       "path": "node_modules/cz-conventional-changelog"
     },
     "ghooks": {
-      "pre-commit": "npm run cover"
+      "pre-commit": "npm run lint && npm run cover"
     }
   },
   "repository": {
