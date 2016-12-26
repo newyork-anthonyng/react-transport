@@ -1,6 +1,6 @@
 {
   "name": "@newyork.anthonyng/react-transport",
-  "version": "0.0.1-development",
+  "version": "0.0.2",
   "description": "Transport React element to document.body",
   "main": "build/index.js",
   "scripts": {
